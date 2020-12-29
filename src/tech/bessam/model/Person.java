@@ -1,13 +1,19 @@
 package tech.bessam.model;
 
+import tech.bessam.reflection.annotation.Column;
+import tech.bessam.reflection.annotation.PrimaryKey;
+
 /**
  * @author bessam on 28/12/2020
  */
 
 public class Person {
 
+    @PrimaryKey
     private long id;
+    @Column
     private String name;
+    @Column
     private int age;
 
     public Person() {
